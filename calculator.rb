@@ -1,6 +1,6 @@
 puts "What function would you like to use?"
 puts "Add, Subtract, Multiply, Divide, Area of Triangle, Area of Rectangle, Vol of Cylinder,Vol of Sphere"
-function = gets.chomp
+function = gets.chomp.downcase
 
 puts "Give me first number"
 num_1 = gets.chomp.to_f
@@ -41,21 +41,21 @@ def vol_of_Sphere(num_1)
 end
 
 case function
-when 'Add'
+when 'add'
   puts add(num_1,num_2)
-when 'Subtract'
+when 'aubtract'
   puts subtract(num_1,num_2)
-when 'Multiply'
+when 'multiply'
   puts multipy(num_1,num_2)
-when 'Divide'
+when 'divide'
   puts divide(num_1,num_2)
-when 'Area of Triangle'
+when 'area of triangle'
   puts area_of_Triangle(num_1,num_2)
-when 'Area of Rectangle'
+when 'area of rectangle'
   puts area_of_Rectangle(num_1,num_2)
-when 'Vol of Cylinder'
+when 'vol of cylinder'
   puts vol_of_Cylinder(num_1,num_2)
-when 'Vol of Sphere'
+when 'vol of sphere'
   puts vol_of_Sphere(num_1)
 else
   puts "Pick a function from the list"
